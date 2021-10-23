@@ -1,4 +1,4 @@
-import React, {useEffect, useContext} from "react"
+import React from "react"
 import t1 from "./images/t1.webp"
 import t2 from "./images/t2.webp"
 import t3 from "./images/t3.webp"
