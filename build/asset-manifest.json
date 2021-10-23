@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9f2641ff.chunk.css",
+    "main.js": "/static/js/main.8cfc5182.chunk.js",
+    "main.js.map": "/static/js/main.8cfc5182.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.04ff8200.js",
+    "runtime-main.js.map": "/static/js/runtime-main.04ff8200.js.map",
+    "static/css/2.8fabdb4f.chunk.css": "/static/css/2.8fabdb4f.chunk.css",
+    "static/js/2.2b66bc95.chunk.js": "/static/js/2.2b66bc95.chunk.js",
+    "static/js/2.2b66bc95.chunk.js.map": "/static/js/2.2b66bc95.chunk.js.map",
+    "static/js/3.10f5c401.chunk.js": "/static/js/3.10f5c401.chunk.js",
+    "static/js/3.10f5c401.chunk.js.map": "/static/js/3.10f5c401.chunk.js.map",
+    "static/js/4.dbcd481e.chunk.js": "/static/js/4.dbcd481e.chunk.js",
+    "static/js/4.dbcd481e.chunk.js.map": "/static/js/4.dbcd481e.chunk.js.map",
+    "static/js/5.c0ba2397.chunk.js": "/static/js/5.c0ba2397.chunk.js",
+    "static/js/5.c0ba2397.chunk.js.map": "/static/js/5.c0ba2397.chunk.js.map",
+    "static/js/6.9bae9aa0.chunk.js": "/static/js/6.9bae9aa0.chunk.js",
+    "static/js/6.9bae9aa0.chunk.js.map": "/static/js/6.9bae9aa0.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.8fabdb4f.chunk.css.map": "/static/css/2.8fabdb4f.chunk.css.map",
+    "static/css/main.9f2641ff.chunk.css.map": "/static/css/main.9f2641ff.chunk.css.map",
+    "static/js/2.2b66bc95.chunk.js.LICENSE.txt": "/static/js/2.2b66bc95.chunk.js.LICENSE.txt",
+    "static/media/style.css": "/static/media/backgroundS.a5722f72.webp",
+    "static/media/display.1fd4c12a.mp4": "/static/media/display.1fd4c12a.mp4",
+    "static/media/logo.fbd12e8b.webp": "/static/media/logo.fbd12e8b.webp",
+    "static/media/spin.6a0a7b3b.webm": "/static/media/spin.6a0a7b3b.webm",
+    "static/media/t1.5b1624bb.webp": "/static/media/t1.5b1624bb.webp",
+    "static/media/t2.09258eea.webp": "/static/media/t2.09258eea.webp",
+    "static/media/t3.9e67d0b9.webp": "/static/media/t3.9e67d0b9.webp",
+    "static/media/t4.8500d74d.webp": "/static/media/t4.8500d74d.webp",
+    "static/media/t5.cd5e7f06.webp": "/static/media/t5.cd5e7f06.webp"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.04ff8200.js",
+    "static/css/2.8fabdb4f.chunk.css",
+    "static/js/2.2b66bc95.chunk.js",
+    "static/css/main.9f2641ff.chunk.css",
+    "static/js/main.8cfc5182.chunk.js"
+  ]
+}
