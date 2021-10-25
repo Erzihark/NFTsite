@@ -3,7 +3,6 @@ import nechro from "./video/display.mp4";
 
 export default function About() {
     return (
-        <div>
             <section className={"about"} id={"about-project"}>
                 <div className={"about-text"}>
                     <h1 className={"about-text__title"}>
@@ -18,6 +17,5 @@ export default function About() {
                     <source src={nechro} type={"video/mp4"}/>
                 </video>
             </section>
-        </div>
     )
 }

@@ -97,6 +97,14 @@ const App = () => {
                 <div>
                     <Navbar />
                     <Intro />
+                    <Home
+                        candyMachineId={candyMachineId}
+                        config={config}
+                        connection={connection}
+                        startDate={startDateSeed}
+                        treasury={treasury}
+                        txTimeout={txTimeout}
+                    />
                     <Suspense fallback={<h1 className={"loader"}>Loading....</h1>}>
                         <About />
                         <Suspense fallback={<h1 className={"loader"}>Loading....</h1>}>
@@ -107,14 +115,6 @@ const App = () => {
                         </Suspense>
                     </Suspense>
                 </div>
-              <Home
-                candyMachineId={candyMachineId}
-                config={config}
-                connection={connection}
-                startDate={startDateSeed}
-                treasury={treasury}
-                txTimeout={txTimeout}
-              />
             </WalletDialogProvider>
           </WalletProvider>
         </ConnectionProvider>

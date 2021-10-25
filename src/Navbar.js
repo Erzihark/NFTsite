@@ -9,7 +9,6 @@ library.add(faDiscord)
 
 export default function Navbar(){
     return(
-        <div>
             <StickyNav length='5' >
                 <a href={"#introduction"} className={"active"}>Home</a>
                 <a href={"#about-project"} >About</a>
@@ -20,7 +19,6 @@ export default function Navbar(){
                     <FontAwesomeIcon icon={['fab', 'discord']} />
                 </a>
             </StickyNav>
-        </div>
     )
 }
 
