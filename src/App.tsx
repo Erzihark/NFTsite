@@ -27,7 +27,9 @@ import Navbar from "./Navbar"
 
 const About = lazy(() => import('./About'))
 const NechromaticsList = lazy(() => import('./NechromaticsList'))
+const Team = lazy(() => import('./Team'))
 const Footer = lazy(() => import('./Footer'))
+
 
 const treasury = new anchor.web3.PublicKey(
   process.env.REACT_APP_TREASURY_ADDRESS!
@@ -110,7 +112,10 @@ const App = () => {
                         <Suspense fallback={<h1 className={"loader"}>Loading....</h1>}>
                             <NechromaticsList />
                             <Suspense fallback={<h1 className={"loader"}>Loading....</h1>}>
-                                <Footer />
+                                <Team />
+                                <Suspense fallback={<h1 className={"loader"}>Loading....</h1>}>
+                                    <Footer />
+                                </Suspense>
                             </Suspense>
                         </Suspense>
                     </Suspense>

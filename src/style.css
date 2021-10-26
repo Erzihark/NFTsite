@@ -22,7 +22,7 @@
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
-    --fs-h3: 1.75;
+    --fs-h3: 1.75rem;
     --fs-h4: 1.25rem;
     --fs-body: 1rem;
 
@@ -68,6 +68,10 @@ strong { font-weight: var(--fw-bold); color: var(--clr-accent-golden) }
 
 :focus {
     outline: 1px solid var(--clr-accent-light);
+}
+
+a {
+    text-decoration: none;
 }
 
 .btn {
@@ -457,14 +461,73 @@ h4 { font-size: var(--fs-h4) }
         display: block;
     }
 }
+/* -----------------------------------------------TEAM-------------------------------------------------- */
 
-/* -----------------------------------------------FOOTER-------------------------------------------------- */
-
-.footer {
+.team-section {
     background: linear-gradient(
             rgba(0, 0, 0, 0.4),
             rgba(0, 0, 0, 0)
     ),var(--clr-accent-dark);
+    padding: 100px 30px;
+}
+
+.team-header {
+    text-align: center;
+    text-shadow: var(--bs);
+    font-family: var(--ff-primary);
+    background: linear-gradient(90deg, #ffc300, #ff5733, #be1d5b, #ad1f84);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.team-flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.teammate-card {
+    margin: 20px;
+    color: var(--clr-accent-golden);
+}
+
+.teammate-card__vitals {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.teammate-card a {
+    color: var(--clr-accent-golden);
+    padding: 5px 15px;
+}
+
+.teamamte-card__img {
+    border-radius: 50%;
+}
+
+.teammate-card__name {
+    background: linear-gradient(90deg, #ffc300, #ff5733, #be1d5b, #ad1f84);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 5px;
+    text-align: center;
+    text-shadow: var(--bs);
+}
+
+.teammate-card__role {
+    text-align: center;
+    font-weight: var(--fw-reg);
+}
+
+/* -----------------------------------------------FOOTER-------------------------------------------------- */
+
+.footer {
+    background: radial-gradient(ellipse farthest-side at 76% 77%, rgba(59, 54, 51, 0.25) 4%,
+    rgba(255, 255, 255, 0) calc(4% + 1px)), radial-gradient(circle at 76% 40%, #070707 4%, rgba(255, 255, 255, 0) 4.18%),
+    linear-gradient(135deg, #000000 0%, #030a57 50%, #4d4c6b 75%, #000000 100%),
+    radial-gradient(ellipse at 28% 0%, #457e72 0%, rgba(82, 121, 68, 0.5) 100%),
+    linear-gradient(180deg, #000000 0%, #465b88 69%, #a1506f 70%, #030217 100%);
+    background-blend-mode: multiply, luminosity, multiply;
 }
 
 .footer-container {
@@ -481,11 +544,10 @@ h4 { font-size: var(--fs-h4) }
 
 .footer-container__right{
     text-align: center;
+    text-shadow: var(--bs);
     margin: auto 0;
     font-family: var(--ff-primary);
-    background: linear-gradient(135deg, #ffc300, #ff5733, #be1d5b, #ad1f84);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--clr-accent-cyan);
     padding: 1em 0;
 }
 
