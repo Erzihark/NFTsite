@@ -27,7 +27,7 @@ export default function Team() {
                             Digital Artist
                         </h4>
                         <div className={"teammate-card__vitals"}>
-                            <a href={'https://www.instagram.com/c_a_bot?r=nametag'}>
+                            <a href={'https://www.instagram.com/c_a_bot?r=nametag'} target={"_blank"} rel={"noopener noreferrer"}>
                                 <FontAwesomeIcon icon={['fab', 'instagram']} />
                             </a>
                         </div>
@@ -60,10 +60,10 @@ export default function Team() {
                         Developer
                     </h4>
                     <div className={"teammate-card__vitals"}>
-                        <a href={'https://github.com/erzihark'}>
+                        <a href={'https://github.com/erzihark'} target={"_blank"} rel={"noopener noreferrer"}>
                             <FontAwesomeIcon icon={['fab', 'github']} />
                         </a>
-                        <a href={'https://www.linkedin.com/in/manuel-sanchez-2b43801bb/'}>
+                        <a href={'https://www.linkedin.com/in/manuel-sanchez-2b43801bb/'} target={"_blank"} rel={"noopener noreferrer"}>
                             <FontAwesomeIcon icon={['fab', 'linkedin']} />
                         </a>
                     </div>

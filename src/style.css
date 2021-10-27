@@ -28,6 +28,8 @@
 
     --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, .25),
     0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
+
+    --ts: 5px 5px 5px black;
 }
 
 @media (min-width: 1000px) {
@@ -103,6 +105,7 @@ main {
     text-align: center;
     padding: 40px 0;
     color: var(--clr-accent-cyan);
+    display: none;
 }
 
 main div {
@@ -210,8 +213,8 @@ h4 { font-size: var(--fs-h4) }
     border-radius: 2em;
     text-align: center;
     color: var(--clr-accent-cyan);
-    text-shadow: var(--bs);
     font-family: var(--ff-primary);
+    text-shadow: var(--ts);
 }
 
 .intro-img {
@@ -544,8 +547,7 @@ h4 { font-size: var(--fs-h4) }
 
 .footer-container__right{
     text-align: center;
-    text-shadow: var(--bs);
-    margin: auto 0;
+    text-shadow: var(--ts);
     font-family: var(--ff-primary);
     color: var(--clr-accent-cyan);
     padding: 1em 0;
