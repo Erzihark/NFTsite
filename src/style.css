@@ -117,6 +117,17 @@ loader {
     color: red;
     background: #6f00ff;
 }
+
+@media (max-width: 800px) {
+    * {
+        -webkit-transition: none !important;
+        -moz-transition: none !important;
+        -o-transition: none !important;
+        -ms-transition: none !important;
+        transition: none !important;
+        animation-name:none !important;
+    }
+}
 /*----------------------------------------------TYPOGRAPHY--------------------------------------------------*/
 /* Typography */
 h1,
