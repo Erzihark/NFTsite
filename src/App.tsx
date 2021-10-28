@@ -24,6 +24,7 @@ import { createTheme, ThemeProvider } from "@material-ui/core";
 
 import Intro from "./Intro"
 import Navbar from "./Navbar"
+import Button from "./PlaceholderButton"
 
 const About = lazy(() => import('./About'))
 const NechromaticsList = lazy(() => import('./NechromaticsList'))
@@ -99,6 +100,7 @@ const App = () => {
                 <div>
                     <Navbar />
                     <Intro />
+                    <Button />
                     <Home
                         candyMachineId={candyMachineId}
                         config={config}
