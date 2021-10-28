@@ -431,10 +431,6 @@ h4 { font-size: var(--fs-h4) }
     transition: all 0.5s ease ;
 }
 
-.nechromatic-card__imgS{
-    display: none;
-}
-
 .nechromatic-card__img:hover {
     border-radius: 1em;
 }

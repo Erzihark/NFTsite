@@ -1,14 +1,9 @@
 import React from "react"
-import t1 from "./images/t1.webp"
-import t2 from "./images/t2.webp"
-import t3 from "./images/t3.webp"
-import t4 from "./images/t4.webp"
-import t5 from "./images/t5.webp"
-import t1S from "./images/t1S.webp"
-import t2S from "./images/t2S.webp"
-import t3S from "./images/t3S.webp"
-import t4S from "./images/t4S.webp"
-import t5S from "./images/t5S.webp"
+import t1 from "./images/t1S.webp"
+import t2 from "./images/t2S.webp"
+import t3 from "./images/t3S.webp"
+import t4 from "./images/t4S.webp"
+import t5 from "./images/t5S.webp"
 
 export default function NechromaticsList() {
 
@@ -36,7 +31,6 @@ export default function NechromaticsList() {
                 <div className={"nechromatic-card__container"}>
                     <div className={"nechromatic-card t1"} >
                         <img className={"nechromatic-card__img"} src={t1} alt={"tier1"} height={320} />
-                        <img className={"nechromatic-card__imgS"} src={t1S} alt={"tier1"} height={320} />
                         <div className={"nechromatic-card__txt-container"}>
                             <h4 className={"nechromatic-card__txt"}>Common</h4>
                         </div>
@@ -45,7 +39,6 @@ export default function NechromaticsList() {
                 <div className={"nechromatic-card__container"}>
                     <div className={"nechromatic-card t2"} >
                         <img className={"nechromatic-card__img"} src={t2} alt={"tier2"} height={320} />
-                        <img className={"nechromatic-card__imgS"} src={t2S} alt={"tier1"} height={320} />
                         <div className={"nechromatic-card__txt-container"}>
                             <h4 className={"nechromatic-card__txt"}>Uncommon</h4>
                         </div>
@@ -54,7 +47,6 @@ export default function NechromaticsList() {
                 <div className={"nechromatic-card__container"}>
                     <div className={"nechromatic-card t3"} >
                         <img className={"nechromatic-card__img"} src={t3} alt={"tier3"} height={320} />
-                        <img className={"nechromatic-card__imgS"} src={t3S} alt={"tier1"} height={320} />
                         <div className={"nechromatic-card__txt-container"}>
                             <h4 className={"nechromatic-card__txt"}>Rare</h4>
                         </div>
@@ -63,7 +55,6 @@ export default function NechromaticsList() {
                 <div className={"nechromatic-card__container"} >
                     <div className={"nechromatic-card t4"} >
                         <img className={"nechromatic-card__img"} src={t4} alt={"tier4"} height={320} />
-                        <img className={"nechromatic-card__imgS"} src={t4S} alt={"tier1"} height={320} />
                         <div className={"nechromatic-card__txt-container"}>
                             <h4 className={"nechromatic-card__txt"}>Epic</h4>
                         </div>
@@ -72,7 +63,6 @@ export default function NechromaticsList() {
                 <div className={"nechromatic-card__container"}>
                     <div className={"nechromatic-card t5"} >
                         <img className={"nechromatic-card__img"} src={t5} alt={"tier5"} height={320} />
-                        <img className={"nechromatic-card__imgS"} src={t5S} alt={"tier5"} height={320} />
                         <div className={"nechromatic-card__txt-container"}>
                             <h4 className={"nechromatic-card__txt"}>Legendary</h4>
                         </div>
