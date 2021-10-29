@@ -24,8 +24,8 @@ import { createTheme, ThemeProvider } from "@material-ui/core";
 
 import Intro from "./Intro"
 import Navbar from "./Navbar"
-import Button from "./PlaceholderButton"
 
+const Button = lazy(()=> import('./PlaceholderButton'))
 const About = lazy(() => import('./About'))
 const NechromaticsList = lazy(() => import('./NechromaticsList'))
 const Team = lazy(() => import('./Team'))
@@ -100,7 +100,14 @@ const App = () => {
                 <div>
                     <Navbar />
                     <Intro />
-                    <Button />
+                    <Suspense fallback={<div className="lds-ring">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>}>
+                        <Button />
+                    </Suspense>
                     <Home
                         candyMachineId={candyMachineId}
                         config={config}
@@ -109,13 +116,33 @@ const App = () => {
                         treasury={treasury}
                         txTimeout={txTimeout}
                     />
-                    <Suspense fallback={<h1 className={"loader"}>Loading....</h1>}>
+                    <Suspense fallback={<div className="lds-ring">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>}>
                         <About />
-                        <Suspense fallback={<h1 className={"loader"}>Loading....</h1>}>
+                        <Suspense fallback={<div className="lds-ring">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>}>
                             <NechromaticsList />
-                            <Suspense fallback={<h1 className={"loader"}>Loading....</h1>}>
+                            <Suspense fallback={<div className="lds-ring">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>}>
                                 <Team />
-                                <Suspense fallback={<h1 className={"loader"}>Loading....</h1>}>
+                                <Suspense fallback={<div className="lds-ring">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>}>
                                     <Footer />
                                 </Suspense>
                             </Suspense>

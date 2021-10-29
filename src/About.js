@@ -1,5 +1,5 @@
 import React from "react"
-import nechro from "./video/display.mp4";
+import nechro from "./video/display.webm";
 
 export default function About() {
     return (
