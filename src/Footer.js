@@ -9,7 +9,7 @@ export default function Footer(){
                     <source  src={nechro} type={"video/webm"}/>
                 </video>
                 <h1 className={"footer-container__right"}>
-                    Coming October 30th
+                    Coming November 5th
                 </h1>
             </div>
         </footer>

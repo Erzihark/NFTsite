@@ -162,6 +162,22 @@ main div {
         animation-name:none !important;
     }
 }
+
+li{
+    list-style-type:none;
+    margin-top: 1.5em;
+}
+
+li span{
+    font-size: 20px;
+}
+
+ul li:before {
+    content: url(./images/bullet.webp);
+    height: 10px;
+    vertical-align: middle;
+    padding-right: 1em;
+}
 /*----------------------------------------------TYPOGRAPHY--------------------------------------------------*/
 /* Typography */
 h1,
@@ -295,7 +311,7 @@ h4 { font-size: var(--fs-h4) }
 /* -------------------------------------------COUNTDOWN-------------------------------------------- */
 
 .countdown {
-    background: transparent;
+    background: #350e28;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -304,8 +320,10 @@ h4 { font-size: var(--fs-h4) }
 }
 
 .clock {
+    font-family: var(--ff-secondary);
+    font-weight: var(--fw-reg);
     position: relative;
-    margin: 0;
+    margin: 1em 0;
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -315,7 +333,6 @@ h4 { font-size: var(--fs-h4) }
     color: var(--clr-accent-cyan);
     text-shadow: 1px 1px 7px;
     border-radius: 15px;
-    display: none;
 }
 
 .clock section {
@@ -342,6 +359,7 @@ h4 { font-size: var(--fs-h4) }
     background: #262b4f;
     border-radius: 4px;
     padding: 12px 16px;
+    box-shadow: var(--bs);
 }
 
 /* -----------------------------------------------ABOUT--------------------------------------------------- */
@@ -545,7 +563,37 @@ h4 { font-size: var(--fs-h4) }
     color: #ff6a00;
     text-shadow: 0 1px 1px black;
 }
+/* -----------------------------------------------ROADMAP-------------------------------------------------- */
 
+.roadmap {
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0)
+    ),var(--clr-accent-dark);
+    padding: 100px 30px;
+}
+
+.roadmap-flexbox {
+    display: flex;
+    justify-content: space-around;
+    padding: 3em;
+    flex-direction: row;
+    align-content: center;
+}
+
+.roadmap-img {
+    max-width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.roadmap-list {
+    font-family: var(--ff-secondary);
+    font-weight: var(--fw-reg);
+    background: linear-gradient(90deg, #ffc300, #ff5733, #be1d5b, #ad1f84);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 /* -----------------------------------------------TEAM-------------------------------------------------- */
 
 .team-section {

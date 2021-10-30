@@ -28,6 +28,7 @@ import Navbar from "./Navbar"
 const Button = lazy(()=> import('./PlaceholderButton'))
 const About = lazy(() => import('./About'))
 const NechromaticsList = lazy(() => import('./NechromaticsList'))
+const Roadmap = lazy(() => import('./Roadmap'))
 const Team = lazy(() => import('./Team'))
 const Footer = lazy(() => import('./Footer'))
 
@@ -130,6 +131,14 @@ const App = () => {
                             <div></div>
                         </div>}>
                             <NechromaticsList />
+                            {/*<Suspense fallback={<div className="lds-ring">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>}>
+                                <Roadmap />
+                            </Suspense>*/}
                             <Suspense fallback={<div className="lds-ring">
                                 <div></div>
                                 <div></div>
