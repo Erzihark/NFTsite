@@ -50,14 +50,7 @@ html {
 /*--------------------------------------------GENERAL STYLES---------------------------------*/
 
 body {
-    background:
-            linear-gradient(135deg, black 25%, transparent 25%) -50px 0,
-            linear-gradient(225deg, black 25%, transparent 25%) -50px 0,
-            linear-gradient(315deg, black 25%, transparent 25%),
-            linear-gradient(45deg, black 25%, transparent 25%);
-    background-attachment: fixed;
-    background-size: 2em 2em;
-    background-color: #00040c;
+    background: #00040c url(./images/tree.svg) no-repeat fixed center;
     color: var(--clr-light);
     margin: 0;
     font-family: var(--ff-secondary);
@@ -349,6 +342,7 @@ h4 { font-size: var(--fs-h4) }
 
 .clock section small {
     font-family: var(--ff-primary);
+    font-size: 20px;
     text-shadow: none;
 }
 
@@ -575,16 +569,27 @@ h4 { font-size: var(--fs-h4) }
 
 .roadmap-flexbox {
     display: flex;
-    justify-content: space-around;
-    padding: 3em;
+    justify-content: space-evenly;
+    margin: 1em;
+    flex-wrap: wrap;
     flex-direction: row;
-    align-content: center;
+}
+
+.roadmap-img__container {
+    display: flex;
+    width: 500px;
 }
 
 .roadmap-img {
-    max-width: 50%;
-    justify-content: center;
-    align-items: center;
+    width: 500px;
+    height: 500px;
+    align-self: center;
+}
+
+.roadmap-list__container {
+    margin: 10px;
+    padding: 10px;
+    width: 800px;
 }
 
 .roadmap-list {
@@ -593,14 +598,25 @@ h4 { font-size: var(--fs-h4) }
     background: linear-gradient(90deg, #ffc300, #ff5733, #be1d5b, #ad1f84);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+}
+
+@media (max-width: 800px) {
+    .roadmap-img__container {
+        width: 300px;
+    }
+    .roadmap-img {
+        width: 300px;
+        height: 300px;
+    }
+    .roadmap-list {
+        font-size: 9px;
+    }
 }
 /* -----------------------------------------------TEAM-------------------------------------------------- */
 
 .team-section {
-    background: linear-gradient(
-            rgba(0, 0, 0, 0.4),
-            rgba(0, 0, 0, 0)
-    ),var(--clr-accent-dark);
+    background: transparent;
     padding: 100px 30px;
 }
 
@@ -608,9 +624,7 @@ h4 { font-size: var(--fs-h4) }
     text-align: center;
     text-shadow: var(--bs);
     font-family: var(--ff-primary);
-    background: linear-gradient(90deg, #ffc300, #ff5733, #be1d5b, #ad1f84);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--clr-accent-cyan);
 }
 
 .team-flexbox {
@@ -640,9 +654,7 @@ h4 { font-size: var(--fs-h4) }
 }
 
 .teammate-card__name {
-    background: linear-gradient(90deg, #ffc300, #ff5733, #be1d5b, #ad1f84);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--clr-accent-cyan);
     margin-top: 5px;
     text-align: center;
     text-shadow: var(--bs);
@@ -656,8 +668,10 @@ h4 { font-size: var(--fs-h4) }
 /* -----------------------------------------------FOOTER-------------------------------------------------- */
 
 .footer {
-    background: transparent;
-    background-blend-mode: multiply, luminosity, multiply;
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0)
+    ),var(--clr-accent-dark);
 }
 
 .footer-container {
@@ -674,9 +688,11 @@ h4 { font-size: var(--fs-h4) }
 
 .footer-container__right{
     text-align: center;
-    text-shadow: var(--ts);
+    text-shadow: var(--bs);
     font-family: var(--ff-primary);
-    color: var(--clr-accent-cyan);
+    background: linear-gradient(90deg, #ffc300, #ff5733, #be1d5b, #ad1f84);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     padding: 1em 0;
 }
 
