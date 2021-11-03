@@ -67,7 +67,14 @@ img {
     max-width: 100%;
 }
 
-strong { font-weight: var(--fw-bold); color: var(--clr-accent-golden) }
+strong {
+    font-family: var(--ff-primary);
+    font-size: 25px;
+    font-weight: var(--fw-bold);
+    background: linear-gradient(90deg, #ffc300, #ff5733);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 :focus {
     outline: 1px solid var(--clr-accent-light);
@@ -395,9 +402,9 @@ h4 { font-size: var(--fs-h4) }
 }
 
 .about-img {
-    border-radius: 1em;
     width: 500px;
     box-shadow: var(--bs);
+    border-radius: 20px;
 }
 
 @media (min-width: 800px) {
@@ -567,6 +574,15 @@ h4 { font-size: var(--fs-h4) }
     padding: 100px 30px;
 }
 
+.roadmap-title {
+    font-family: var(--ff-primary);
+    text-align: center;
+    background: linear-gradient(180deg, #ffc300, #ff5733, #be1d5b, #ad1f84);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 40px;
+}
+
 .roadmap-flexbox {
     display: flex;
     justify-content: space-evenly;
@@ -584,7 +600,13 @@ h4 { font-size: var(--fs-h4) }
     width: 500px;
     height: 500px;
     align-self: center;
+    box-shadow: var(--bs);
+    border-radius: 20px;
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg %3E%3Ccircle fill='%23000000' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%234a0b00' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%23672900' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%23894600' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%23ad6400' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%23D38312' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
 }
+
 
 .roadmap-list__container {
     margin: 10px;
@@ -595,10 +617,13 @@ h4 { font-size: var(--fs-h4) }
 .roadmap-list {
     font-family: var(--ff-secondary);
     font-weight: var(--fw-reg);
-    background: linear-gradient(90deg, #ffc300, #ff5733, #be1d5b, #ad1f84);
+    text-shadow: var(--bs);
+}
+
+ul li {
+    background: linear-gradient(145deg, #ffc300, #ff5733);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
 }
 
 @media (max-width: 800px) {
@@ -641,10 +666,11 @@ h4 { font-size: var(--fs-h4) }
 .teammate-card__vitals {
     display: flex;
     justify-content: space-evenly;
+    font-size: 30px;
 }
 
 .teammate-card a {
-    color: var(--clr-accent-golden);
+    color: var(--clr-accent-light);
     padding: 5px 15px;
 }
 
@@ -684,13 +710,16 @@ h4 { font-size: var(--fs-h4) }
 
 .footer-container__left{
     width: 450px;
+    border-radius: 20px;
+    box-shadow: var(--bs);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg %3E%3Ccircle fill='%23000000' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%234a0b00' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%23672900' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%23894600' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%23ad6400' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%23D38312' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
 }
 
 .footer-container__right{
     text-align: center;
-    text-shadow: var(--bs);
     font-family: var(--ff-primary);
-    background: linear-gradient(90deg, #ffc300, #ff5733, #be1d5b, #ad1f84);
+    background: linear-gradient(90deg, #ffc300, #ff5733);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 1em 0;

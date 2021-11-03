@@ -6,7 +6,7 @@ export default function About() {
             <section className={"about"} id={"about-project"}>
                 <div className={"about-text"}>
                     <h1 className={"about-text__title"}>
-                        <strong>100</strong> stylish skeletons
+                        100 stylish skeletons
                     </h1>
                     <br/>
                     <h3>Nechromatics are a collection of hand-drawn NFT's on
