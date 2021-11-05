@@ -11,7 +11,7 @@ export default function PlaceholderButton() {
     let interval;
 
     const startTimer = () => {
-        const countDownDate = new Date('Nov 5 2021 17:00:00 EST').getTime();
+        const countDownDate = new Date('Nov 5 2021 18:00:00 EST').getTime();
 
         interval = setInterval(() => {
             const now = new Date().getTime();
@@ -51,9 +51,6 @@ export default function PlaceholderButton() {
                 timerMinutes={timerMinutes}
                 timerSeconds={timerSeconds}
             />
-            <div className={"placeholderButton"}>
-                Available soon
-            </div>
         </section>
     )
 }
