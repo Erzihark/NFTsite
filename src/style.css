@@ -303,6 +303,13 @@ h4 { font-size: var(--fs-h4) }
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: var(--ff-secondary);
+}
+
+.countdown h1 {
+    background: linear-gradient(90deg, #ffc300, #ff5733, #be1d5b, #ad1f84);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .clock {
