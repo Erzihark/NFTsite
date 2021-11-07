@@ -548,6 +548,133 @@ h4 { font-size: var(--fs-h4) }
     color: #ff6a00;
     text-shadow: 0 1px 1px black;
 }
+
+.btn-container {
+    text-align: center;
+    margin: 3em;
+}
+
+.rarities-btn {
+    padding: 1em 2em;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 1.5em;
+    cursor: pointer;
+    color: var(--clr-accent-cyan);
+    font-family: var(--ff-secondary);
+    background: radial-gradient(circle, var(--clr-dark) 50%, black) ;
+    transition: all 0.5s ease-in-out;
+    box-shadow: var(--bs);
+    text-shadow: 1px 1px 4px white;
+    border: 1px solid var(--clr-accent-cyan);
+}
+
+.rarities-btn:hover {
+    color: black;
+    border-radius: 1em;
+    background: var(--clr-accent-light);
+}
+/* -----------------------------------------------RARITIES-------------------------------------------------- */
+.rarities-modal__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 800px;
+    height: 850px;
+    transform: translate(-50%, -50%);
+    background: var(--clr-dark);
+    padding: 1.5em;
+    border-radius: 2em;
+}
+
+.rarities-modal {
+    margin-top: 15px;
+    padding: 2em;
+    text-align: center;
+    z-index: 1;
+    border-radius: 2em;
+    overflow: auto;
+}
+
+.rarities-close {
+    padding: 0.5em 0.6em;
+    border-radius: 50%;
+    border: none;
+    background: var(--clr-light);
+}
+
+.rarities-close:hover {
+    background: var(--clr-accent-light);
+}
+
+.rarities-close__container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.rarities-table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.rarities-thead {
+    color: var(--clr-accent-golden);
+}
+
+.rarities-modal__container h3{
+    font-family: var(--ff-primary);
+    color: var(--clr-accent-cyan);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+th {
+    position: sticky;
+}
+
+@media (max-width: 800px) {
+    .rarities-modal {
+        padding: 1em;
+    }
+
+    .rarities-close__container {
+        top: 15px;
+        right: 15px;
+    }
+
+    .rarities-modal__container {
+        border-radius: 1em;
+    }
+
+    .rarities-modal__container {
+        height: 450px;
+        width: 300px;
+    }
+}
+
 /* -----------------------------------------------ROADMAP-------------------------------------------------- */
 
 .roadmap {
