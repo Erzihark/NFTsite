@@ -13,6 +13,7 @@ export default function Roadmap(){
                     <ul className={"roadmap-list"}>
                         <li><span>Exclusive Collection of <strong>100</strong> Nechromatics with perks for next collection ( </span><strong>LIVE NOW!</strong> )</li>
                         <li><span>Implement Nechromatics’ Lottery System 1.0 (<strong>30%</strong> of royalties go to a lottery wallet for holders)</span></li>
+                        <li><span>Implement DAO</span></li>
                         <li><span>Begin development of our second <strong>6,666</strong> Nechromatics collection</span></li>
                         <li><span>Collaborations with other SOL Projects</span></li>
                         <li><span>Community contests with prizes</span></li>
