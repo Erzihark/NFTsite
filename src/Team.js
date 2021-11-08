@@ -39,8 +39,13 @@ export default function Team() {
                         Hidake
                     </h4>
                     <h4 className={"teammate-card__role"}>
-                        Team Lead
+                        Project Manager
                     </h4>
+                    <div className={"teammate-card__vitals"}>
+                        <a href={"https://twitter.com/CryptographicC1"} className={"right"}>
+                            <FontAwesomeIcon icon={['fab', 'twitter']} />
+                        </a>
+                    </div>
                 </div>
                 <div className={"teammate-card"}>
                     <img className={"teamamte-card__img"} src={Fran} alt={"fran"}/>
@@ -50,6 +55,11 @@ export default function Team() {
                     <h4 className={"teammate-card__role"}>
                         Developer
                     </h4>
+                    <div className={"teammate-card__vitals"}>
+                        <a href={"https://twitter.com/franciscogfdz"} className={"right"}>
+                            <FontAwesomeIcon icon={['fab', 'twitter']} />
+                        </a>
+                    </div>
                 </div>
                 <div className={"teammate-card"}>
                     <img className={"teamamte-card__img"} src={Me} alt={"me"}/>
@@ -60,8 +70,8 @@ export default function Team() {
                         Developer
                     </h4>
                     <div className={"teammate-card__vitals"}>
-                        <a href={'https://github.com/erzihark'} target={"_blank"} rel={"noopener noreferrer"}>
-                            <FontAwesomeIcon icon={['fab', 'github']} />
+                        <a href={"https://twitter.com/Erzihark"} className={"right"}>
+                            <FontAwesomeIcon icon={['fab', 'twitter']} />
                         </a>
                         <a href={'https://www.linkedin.com/in/manuel-sanchez-2b43801bb/'} target={"_blank"} rel={"noopener noreferrer"}>
                             <FontAwesomeIcon icon={['fab', 'linkedin']} />
@@ -74,8 +84,13 @@ export default function Team() {
                         StarMaso
                     </h4>
                     <h4 className={"teammate-card__role"}>
-                        Community<br/> Manager
+                        CMGR
                     </h4>
+                    <div className={"teammate-card__vitals"}>
+                        <a href={"https://twitter.com/TheMasterNite"} className={"right"}>
+                            <FontAwesomeIcon icon={['fab', 'twitter']} />
+                        </a>
+                    </div>
                 </div>
                 <div className={"teammate-card"}>
                     <img className={"teamamte-card__img"} src={Juanma} alt={"juanma"}/>
@@ -85,6 +100,11 @@ export default function Team() {
                     <h4 className={"teammate-card__role"}>
                         Discord
                     </h4>
+                    <div className={"teammate-card__vitals"}>
+                        <a href={"https://twitter.com/JMSamV"} className={"right"}>
+                            <FontAwesomeIcon icon={['fab', 'twitter']} />
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>

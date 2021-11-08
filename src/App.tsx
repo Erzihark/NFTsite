@@ -25,12 +25,10 @@ import { createTheme, ThemeProvider } from "@material-ui/core";
 import Intro from "./Intro"
 import Navbar from "./Navbar"
 
-const Button = lazy(()=> import('./PlaceholderButton'))
 const About = lazy(() => import('./About'))
 const NechromaticsList = lazy(() => import('./NechromaticsList'))
 const Roadmap = lazy(() => import('./Roadmap'))
 const Team = lazy(() => import('./Team'))
-const Footer = lazy(() => import('./Footer'))
 
 
 const treasury = new anchor.web3.PublicKey(
@@ -101,14 +99,6 @@ const App = () => {
                 <div>
                     <Navbar />
                     <Intro />
-                    <Suspense fallback={<div className="lds-ring">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>}>
-                        <Button />
-                    </Suspense>
                     <Home
                         candyMachineId={candyMachineId}
                         config={config}
@@ -146,14 +136,6 @@ const App = () => {
                                 <div></div>
                             </div>}>
                                 <Team />
-                                <Suspense fallback={<div className="lds-ring">
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                </div>}>
-                                    <Footer />
-                                </Suspense>
                             </Suspense>
                         </Suspense>
                     </Suspense>

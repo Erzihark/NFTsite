@@ -29,8 +29,8 @@ export default function NechromaticsList() {
     const [openModal, setOpenModal] = useState(false)
 
     return (
-        <section>
-            <div className={"nechro-display"}> <h2>What will you get?</h2>
+        <section className={"nechro-display"}>
+             <h2>What will you get?</h2>
                 <div className={"nechro-query-container"}>
                     <div className={"nechromatic-card__container"}>
                         <div className={"nechromatic-card t1"} >
@@ -73,7 +73,6 @@ export default function NechromaticsList() {
                         </div>
                     </div>
                 </div>
-            </div>
             <div className={"btn-container"}>
                 <button className={"rarities-btn"} onClick={() => setOpenModal(true)}> Rarity chart</button>
                 {/*short circuit notation, here we send the values to Rarities.js through props
