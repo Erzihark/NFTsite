@@ -110,6 +110,7 @@ main {
     color: var(--clr-accent-cyan);
     background: url(images/4.webp) bottom;
     z-index: 1;
+    display: none;
 }
 
 main p {
@@ -259,7 +260,7 @@ h4 { font-size: var(--fs-h4) }
 /* -----------------------------------------------INTRO--------------------------------------------------- */
 
 .intro {
-    background-image: url(./images/1.webp);
+    background-image: url(./images/background.webp);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
