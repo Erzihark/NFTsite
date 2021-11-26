@@ -1,16 +1,21 @@
 import React from "react";
-import nechro from "./video/spin.webm"
+import Sol from "./images/solana-sol-logo.svg";
 
 export default function Footer(){
     return (
         <footer className={"footer"}>
             <div className={"footer-container"}>
-                <video className={"footer-container__left"} width={450} autoPlay muted loop>
-                    <source  src={nechro} type={"video/webm"}/>
-                </video>
-                <h1 className={"footer-container__right"}>
-                    Coming November 5th
+                <h1 className={"footer-container__top"}>
+                    Relaunch coming soon
                 </h1>
+                <div className={"solana"}>
+                    <h4 className={"footer-container__bottom"}>
+                    Powered by Solana
+                        <img src={Sol} height={15} width={20} alt={"Solana logo"}/>
+
+                    </h4>
+                </div>
+
             </div>
         </footer>
     )

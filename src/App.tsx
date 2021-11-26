@@ -29,6 +29,7 @@ const About = lazy(() => import('./About'))
 const NechromaticsList = lazy(() => import('./NechromaticsList'))
 const Roadmap = lazy(() => import('./Roadmap'))
 const Team = lazy(() => import('./Team'))
+const Footer = lazy(() => import('./Footer'))
 
 
 const treasury = new anchor.web3.PublicKey(
@@ -138,6 +139,14 @@ const App = () => {
                                 <Team />
                             </Suspense>
                         </Suspense>
+                    </Suspense>
+                    <Suspense fallback={<div className="lds-ring">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>}>
+                        <Footer />
                     </Suspense>
                 </div>
             </WalletDialogProvider>

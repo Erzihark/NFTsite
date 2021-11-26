@@ -11,7 +11,7 @@ export default function Intro(){
                         <img className={"intro-img"} src={logo} alt={"nechromatics logo"}/>
                     </div>
                     <h3 className={"intro-text"}>
-                        It's spooky season and the dead are roaming the land of the living...
+                        It's well past spooky season, but the dead are roaming the land of the living regardless...
                     </h3>
                 </div>
                 <div className={"intro-flexbox__right"}>

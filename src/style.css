@@ -869,28 +869,47 @@ th {
 
 .footer-container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    height: inherit;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 500px;
     align-items: center;
 }
 
-.footer-container__left{
+
+
+/*.footer-container__left{
     width: 450px;
     border-radius: 20px;
     box-shadow: var(--bs);
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg %3E%3Ccircle fill='%23000000' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%234a0b00' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%23672900' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%23894600' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%23ad6400' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%23D38312' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
     background-attachment: fixed;
     margin: 100px 0;
-}
+}*/
 
-.footer-container__right{
+.footer-container__top{
     text-align: center;
-    font-family: var(--ff-primary);
+    font-family: var(--ff-secondary);
     background: linear-gradient(90deg, #ffc300, #ff5733);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 1em 0;
+}
+
+.footer-container__bottom {
+    text-align: center;
+    font-family: var(--ff-secondary);
+    font-weight: var(--fw-reg);
+    color: var(--clr-accent-cyan);
+}
+
+.solana img {
+    margin-top: 13px;
+    margin-left: 10px;
+    float: right;
+}
+
+.solana h4 {
+    position: relative;
 }
 
 @media (max-width: 800px) {
