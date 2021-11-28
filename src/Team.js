@@ -3,7 +3,6 @@ import Erick from './images/Erick.webp'
 import Fran from './images/Fran.webp'
 import Cesar from './images/Cesar.webp'
 import Me from './images/Me.webp'
-import Dobby from './images/Dobby.webp'
 import Juanma from './images/Juanma.webp'
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {faInstagram} from "@fortawesome/free-brands-svg-icons";
@@ -79,26 +78,12 @@ export default function Team() {
                     </div>
                 </div>
                 <div className={"teammate-card"}>
-                    <img className={"teamamte-card__img"} src={Dobby} alt={"dobby"}/>
-                    <h4 className={"teammate-card__name"}>
-                        StarMaso
-                    </h4>
-                    <h4 className={"teammate-card__role"}>
-                        CMGR
-                    </h4>
-                    <div className={"teammate-card__vitals"}>
-                        <a href={"https://twitter.com/TheMasterNite"} className={"right"}>
-                            <FontAwesomeIcon icon={['fab', 'twitter']} />
-                        </a>
-                    </div>
-                </div>
-                <div className={"teammate-card"}>
                     <img className={"teamamte-card__img"} src={Juanma} alt={"juanma"}/>
                     <h4 className={"teammate-card__name"}>
                         Lunefists
                     </h4>
                     <h4 className={"teammate-card__role"}>
-                        Discord
+                        CMGR
                     </h4>
                     <div className={"teammate-card__vitals"}>
                         <a href={"https://twitter.com/JMSamV"} className={"right"}>

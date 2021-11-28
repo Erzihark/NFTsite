@@ -864,7 +864,7 @@ th {
     background: linear-gradient(
             rgba(0, 0, 0, 0.4),
             rgba(0, 0, 0, 0)
-    ),var(--clr-accent-dark);
+    ),var(--clr-dark);
 }
 
 .footer-container {
