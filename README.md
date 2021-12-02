@@ -1,6 +1,6 @@
 # Live Version
 
-(nechromatics.com)
+(https://nechromatics.com)
 
 # Candy-Machine-Mint
 
