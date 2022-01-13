@@ -58,6 +58,10 @@ body {
     line-height: 1.6;
 }
 
+td {
+    color: var(--clr-accent-golden);
+}
+
 section {
     padding: 3em 2em;
 }
@@ -108,9 +112,8 @@ main {
     padding: 90px 0;
     margin: -70px 0;
     color: var(--clr-accent-cyan);
-    background: url(images/4.webp) bottom;
+    background: #350e28;
     z-index: 1;
-    display: none;
 }
 
 main p {
@@ -597,7 +600,6 @@ h4 { font-size: var(--fs-h4) }
 .rarities-btn {
     padding: 1em 2em;
     font-size: 1.2em;
-    display: none;
     border-radius: 1.5em;
     cursor: pointer;
     color: var(--clr-accent-cyan);
